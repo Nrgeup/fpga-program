@@ -1,0 +1,36 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 8.019 ns
+From           : Clk3
+To             : clkout3
+From Clock     : clkin
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clkin'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 203.05 MHz ( period = 4.925 ns )
+From           : counter1[0]
+To             : counter1[12]
+From Clock     : clkin
+To Clock       : clkin
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

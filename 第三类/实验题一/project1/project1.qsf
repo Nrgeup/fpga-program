@@ -1,0 +1,61 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		project1_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C5T144C8
+set_global_assignment -name TOP_LEVEL_ENTITY project1
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:16:06  MARCH 25, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION 8.0
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_palace
+set_global_assignment -name VHDL_FILE trans416.vhd
+set_global_assignment -name BDF_FILE project1.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 14622752 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_97 -to A[3]
+set_location_assignment PIN_99 -to A[2]
+set_location_assignment PIN_100 -to A[1]
+set_location_assignment PIN_101 -to A[0]
+set_location_assignment PIN_91 -to EN
+set_location_assignment PIN_67 -to Y[15]
+set_location_assignment PIN_69 -to Y[14]
+set_location_assignment PIN_70 -to Y[13]
+set_location_assignment PIN_71 -to Y[12]
+set_location_assignment PIN_72 -to Y[11]
+set_location_assignment PIN_73 -to Y[10]
+set_location_assignment PIN_74 -to Y[9]
+set_location_assignment PIN_79 -to Y[8]
+set_location_assignment PIN_80 -to Y[7]
+set_location_assignment PIN_81 -to Y[6]
+set_location_assignment PIN_86 -to Y[5]
+set_location_assignment PIN_87 -to Y[4]
+set_location_assignment PIN_92 -to Y[3]
+set_location_assignment PIN_93 -to Y[2]
+set_location_assignment PIN_94 -to Y[1]
+set_location_assignment PIN_96 -to Y[0]

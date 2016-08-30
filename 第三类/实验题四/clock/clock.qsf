@@ -1,0 +1,71 @@
+# Copyright (C) 1991-2008 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+
+# The default values for assignments are stored in the file
+#		clock_assignment_defaults.qdf
+# If this file doesn't exist, and for assignments not listed, see file
+#		assignment_defaults.qdf
+
+# Altera recommends that you do not modify this file. This
+# file is updated automatically by the Quartus II software
+# and any changes you make may be lost or overwritten.
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C5T144C8
+set_global_assignment -name TOP_LEVEL_ENTITY clock
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 8.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:16:16  APRIL 08, 2016"
+set_global_assignment -name LAST_QUARTUS_VERSION 8.0
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_palace
+set_global_assignment -name VHDL_FILE singal_generator.vhd
+set_global_assignment -name BDF_FILE clock.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_134 -to clk
+set_location_assignment PIN_96 -to out
+set_global_assignment -name VERILOG_FILE timer.v
+set_global_assignment -name VHDL_FILE timer.vhd
+set_location_assignment PIN_74 -to reset
+set_location_assignment PIN_79 -to stop
+set_location_assignment PIN_3 -to data5[3]
+set_location_assignment PIN_4 -to data5[2]
+set_location_assignment PIN_7 -to data5[1]
+set_location_assignment PIN_8 -to data5[0]
+set_location_assignment PIN_9 -to data4[3]
+set_location_assignment PIN_24 -to data4[2]
+set_location_assignment PIN_25 -to data4[1]
+set_location_assignment PIN_26 -to data4[0]
+set_location_assignment PIN_27 -to data3[3]
+set_location_assignment PIN_28 -to data3[2]
+set_location_assignment PIN_30 -to data3[1]
+set_location_assignment PIN_31 -to data3[0]
+set_location_assignment PIN_32 -to data2[3]
+set_location_assignment PIN_40 -to data2[2]
+set_location_assignment PIN_41 -to data2[1]
+set_location_assignment PIN_42 -to data2[0]
+set_location_assignment PIN_119 -to data1[3]
+set_location_assignment PIN_118 -to data1[2]
+set_location_assignment PIN_115 -to data1[1]
+set_location_assignment PIN_114 -to data1[0]
+set_location_assignment PIN_113 -to data0[3]
+set_location_assignment PIN_112 -to data0[2]
+set_location_assignment PIN_104 -to data0[1]
+set_location_assignment PIN_103 -to data0[0]
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 14622752 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

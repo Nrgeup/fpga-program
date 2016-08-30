@@ -1,0 +1,37 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+Use ieee.std_logic_unsigned.all;
+Use ieee.std_logic_arith.all;
+
+ENTITY add IS
+ PORT(
+	segment_addr: IN STD_LOGIC_VECTOR(15 downto 0);
+	offset_addr:  IN STD_LOGIC_VECTOR(15 downto 0);
+	out_addr:  OUT STD_LOGIC_VECTOR(19 downto 0)
+ );
+END add;
+
+ARCHITECTURE add_architecture OF add IS
+  signal a:std_logic_vector(19 downto 0);
+  signal b:std_logic_vector(19 downto 0);
+
+begin 
+  behavior:process(segment_addr,offset_addr) is
+
+  variable carry_in:std_logic;
+  variable carry_out:std_logic;
+  variable op2:std_logic_vector(19 downto 0);
+  
+  begin 
+	a<= segment_addr&"0000";
+	b<= "0000"&offset_addr;
+	op2:=b;
+    for index in 0 to 19 loop
+    carry_in:=carry_out;
+    out_addr(index)<=a(index) xor op2(index) xor carry_in;
+    carry_out:=(a(index)and op2(index)) or (carry_in and (a(index) xor op2(index)));
+  end loop;
+   
+  end process;
+
+ end add_architecture;

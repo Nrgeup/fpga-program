@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Mar 18 15:46:07 2016
+Quartus II Version : 8.0 Build 215 05/29/2008 SJ Web Edition
+Revision Name : trans38
+Top-level Entity Name : trans38
+Family : Cyclone II
+Total logic elements : 8
+    Total combinational functions : 8
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 12
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

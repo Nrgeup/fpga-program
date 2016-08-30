@@ -1,0 +1,47 @@
+|trans38
+A[0] => Mux8.IN18
+A[0] => Mux7.IN18
+A[0] => Mux6.IN18
+A[0] => Mux5.IN18
+A[0] => Mux4.IN18
+A[0] => Mux3.IN18
+A[0] => Mux2.IN18
+A[0] => Mux1.IN18
+A[0] => Mux0.IN18
+A[1] => Mux8.IN17
+A[1] => Mux7.IN17
+A[1] => Mux6.IN17
+A[1] => Mux5.IN17
+A[1] => Mux4.IN17
+A[1] => Mux3.IN17
+A[1] => Mux2.IN17
+A[1] => Mux1.IN17
+A[1] => Mux0.IN17
+A[2] => Mux8.IN16
+A[2] => Mux7.IN16
+A[2] => Mux6.IN16
+A[2] => Mux5.IN16
+A[2] => Mux4.IN16
+A[2] => Mux3.IN16
+A[2] => Mux2.IN16
+A[2] => Mux1.IN16
+A[2] => Mux0.IN16
+EN => Mux8.IN19
+EN => Mux7.IN19
+EN => Mux6.IN19
+EN => Mux5.IN19
+EN => Mux4.IN19
+EN => Mux3.IN19
+EN => Mux2.IN19
+EN => Mux1.IN19
+EN => Mux0.IN19
+Y[0] <= Y[0]~1.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]~2.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]~3.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Y[3]~4.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Y[4]~5.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Y[5]~6.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Y[6]~7.DB_MAX_OUTPUT_PORT_TYPE
+Y[7] <= Y[7]~8.DB_MAX_OUTPUT_PORT_TYPE
+
+

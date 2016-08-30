@@ -1,0 +1,55 @@
+|move8
+OUT[0] <= control:inst.data_out[0]
+OUT[1] <= control:inst.data_out[1]
+OUT[2] <= control:inst.data_out[2]
+OUT[3] <= control:inst.data_out[3]
+OUT[4] <= control:inst.data_out[4]
+OUT[5] <= control:inst.data_out[5]
+OUT[6] <= control:inst.data_out[6]
+OUT[7] <= control:inst.data_out[7]
+clk => control:inst.clk
+s0 => control:inst.s0
+s1 => control:inst.s1
+IN[0] => control:inst.data_in[0]
+IN[1] => control:inst.data_in[1]
+IN[2] => control:inst.data_in[2]
+IN[3] => control:inst.data_in[3]
+IN[4] => control:inst.data_in[4]
+IN[5] => control:inst.data_in[5]
+IN[6] => control:inst.data_in[6]
+IN[7] => control:inst.data_in[7]
+
+
+|move8|control:inst
+clk => data_out[7]~reg0.CLK
+clk => data_out[6]~reg0.CLK
+clk => data_out[5]~reg0.CLK
+clk => data_out[4]~reg0.CLK
+clk => data_out[3]~reg0.CLK
+clk => data_out[2]~reg0.CLK
+clk => data_out[1]~reg0.CLK
+clk => data_out[0]~reg0.CLK
+s0 => process0~2.IN0
+s0 => process0~1.IN0
+s0 => process0~0.IN0
+s1 => process0~2.IN1
+s1 => process0~0.IN1
+s1 => process0~1.IN1
+data_in[0] => data_out~23.DATAB
+data_in[1] => data_out~22.DATAB
+data_in[2] => data_out~21.DATAB
+data_in[3] => data_out~20.DATAB
+data_in[4] => data_out~19.DATAB
+data_in[5] => data_out~18.DATAB
+data_in[6] => data_out~17.DATAB
+data_in[7] => data_out~16.DATAB
+data_out[0] <= data_out[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[1] <= data_out[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[2] <= data_out[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[3] <= data_out[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[4] <= data_out[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[5] <= data_out[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[6] <= data_out[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data_out[7] <= data_out[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
